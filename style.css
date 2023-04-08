@@ -1,0 +1,161 @@
+*{
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.container{
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  display: flex;
+  width: 100%;
+  min-width: 40px;
+  background-color: #292929;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
+  gap: 8px 15px;
+  }
+.logo-header{
+  width: 180px;
+}
+.navButtons{
+  display: flex;
+  gap: 15px;
+ }
+
+ .navButton{
+  background-color: transparent;
+  color: white;
+  border:2px solid transparent;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+
+ }
+
+ .navButton:hover{
+border: 2px solid black;
+ }
+.titleHeader{
+text-align: center;
+padding-top: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.titledescription{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 
+  'sectionArea siderbarcontent';
+  padding: 20px;
+  gap:10px;
+ flex:1 0 auto;
+
+}
+.card{
+  width: 280px;
+  height: 380px;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+}
+
+.card:hover{
+ border-color: gainsboro;
+}
+
+.imgcard{
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+
+}
+.sectionArea{
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: 'sectionArea';
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+
+}
+ .siderbarcontent{
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  padding: 16px;
+  grid-area: 'sidebarcontent';
+  gap: 20px;
+
+ }
+ .descriptionSidebar{
+  align-items: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+ }
+
+ .sidebarcardtiyle{
+  color: white;
+  text-align: center;
+ }
+
+.sideimgCard{
+  width: 100%;
+  border-radius: 10px;
+}
+.cardsidebar{
+  width: 75%;
+  border: 2px solid transparent;cursor: pointer;
+
+  
+}
+
+.footer{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+height: 200px;
+min-width: 40px;
+background-color: #292929;
+align-items: center;
+justify-content: space-between;
+padding: 30px;
+gap: 10px;
+
+}
+
+.anchorfooter{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.icon{
+  width: 180px;
+}
+
+@media (max-width: 630px) {
+  .main-container {
+    grid-template-areas:
+      "sectionArea"
+      "siderbarcontent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;}
+  
+  .cardsidebar{
+    min-width: auto;
+  }
+  }
